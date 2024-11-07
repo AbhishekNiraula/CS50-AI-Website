@@ -6,7 +6,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/navbar.js"
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|card|navbar|divider|ripple).js"
   ],
   theme: {
     extend: {
@@ -20,6 +20,9 @@ const config: Config = {
 		cs50Yellow: "#F3AF06",
 		offYellow: "#FFF5E0",
 		warningRed: "#F5004F",
+      },
+	  backgroundImage: {
+        'bg-effect': "url('/images/bg-effect.svg')",
       },
     },
   },

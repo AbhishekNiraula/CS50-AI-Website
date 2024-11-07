@@ -3,6 +3,8 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import PreviousEdition from '@/components/PreviousEdition';
+import Footer from '../app/footer/page';
+import LocalTeam from '../app/local_team/page';
 
 const poppins = Poppins({
 	weight: '400',
@@ -30,10 +32,11 @@ export default function RootLayout({
 					sizes="<generated>"
 				/>
 			</head>
-			<body className={poppins.className}>
+			<body className={`bg-offWhite ${poppins.className}`}>
 				<Navbar />
 				<PreviousEdition />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
