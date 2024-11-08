@@ -42,7 +42,7 @@ export const HoverEffect = ({
 								exit={{
 									opacity: 0,
 								}}
-								transition={{ duration: 0.3, ease: 'easeInOut', delay: 0.2 }}
+								transition={{ duration: 0.3, ease: 'linear', delay: 0.2 }}
 							/>
 						)}
 					</AnimatePresence>

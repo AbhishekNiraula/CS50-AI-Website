@@ -24,9 +24,9 @@ export default function App() {
 	const menuItems = [
 		['/', 'Home'],
 		['/#about', 'About Us'],
+		['/syllabus', 'Syllabus'],
 		['/local_team', 'Local Team'],
 		['/#faqs', 'FAQs'],
-		['/#testimonials', 'Testimonials'],
 		['/code-of-conduct', 'Code of Conduct'],
 	];
 	useEffect(() => {
@@ -67,7 +67,7 @@ export default function App() {
 	return (
 		<Navbar
 			maxWidth="full"
-			className="navbar px-0 sm:px-0 md:px-6 font-medium bg-offYellow text-textBlue overflow-x-hidden"
+			className="navbar z-50 px-0 sm:px-0 md:px-6 font-medium bg-offYellow text-textBlue overflow-x-hidden"
 			onMenuOpenChange={setIsMenuOpen}>
 			<NavbarContent className="">
 				<NavbarMenuToggle
@@ -88,7 +88,7 @@ export default function App() {
 					<NavbarItem
 						className={`h-[40%] flex items-center  text-textBlue transition-all duration-200 hover:text-primaryRed focus:text-primaryRed ${
 							isActive(link)
-								? 'border-s-3 overflow-hidden rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed'
+								? 'border-b-3 overflow-hidden border-spacing-7 rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed'
 								: ''
 						}`}
 						key={`${title}-${index}`}>
