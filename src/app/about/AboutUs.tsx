@@ -4,10 +4,8 @@ import Image from 'next/image';
 
 const AboutUs = () => {
 	return (
-		<>
-			<div
-				id="about"
-				className="w-full md:h-20 h-32 text-white flex flex-col items-center justify-center bg-gradient-to-r from-purple-950 via-purple-800 to-purple-500">
+		<section id="about">
+			<div className="w-full md:h-20 h-32 text-white flex flex-col items-center justify-center bg-gradient-to-r from-purple-950 via-purple-800 to-purple-500 py-8">
 				<p className="text-4xl mt-6 font-extrabold">About Us</p>
 				<p className="text-xs py-2 px-6 sm:px-28 text-center ">
 					Following a very successful adaption of CS50x course in Nepal, We are
@@ -53,7 +51,7 @@ const AboutUs = () => {
 						examples,student learn how to build intelligent systems capable of
 						solving complex problems. Cs50 AI is ideal for those looking to gain
 						fundamental knowledge in AI, equipping them with the skills needed
-						ti pursue furthur studies or careers in this transformative field.
+						to pursue furthur studies or careers in this transformative field.
 					</p>
 				</div>
 				<div className="w-full mb-4 sm:mb-0 sm:w-1/3 flex flex-col justify-center align-center items-center">
@@ -68,7 +66,7 @@ const AboutUs = () => {
 					/>
 				</div>
 			</div>
-		</>
+		</section>
 	);
 };
 

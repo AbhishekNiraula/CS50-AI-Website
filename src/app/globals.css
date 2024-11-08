@@ -13,4 +13,25 @@
     --foreground: #ededed;
   }
 }
-/* Necessary detailing styles */
+.shadow-right-fade {
+	box-shadow: 0 0 10px rgba(20, 30, 70, 0.3); /* Adjust the color and opacity as needed */
+}
+@media screen and (min-width: 768px) and (max-width: 840px) {
+  nav {
+	padding-inline: 0.25rem !important;
+  };
+  nav header {
+	gap: 0.5rem !important;
+	padding-inline: 0rem !important;
+  }
+}
+.marquee
+{
+	animation: scroll 10s linear infinite;
+	overflow: hidden;
+}
+
+@keyframes scroll {
+	from { transform: translateX(0); }
+	to { transform: translateX(calc(-100% - var(--gap))); }
+}

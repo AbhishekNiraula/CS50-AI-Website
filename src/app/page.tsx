@@ -5,12 +5,15 @@ import { Link, Button } from '@nextui-org/react';
 import Faqs from '../app/faqs/faqs';
 import { FAQList } from '../app/faqs/faq_list';
 import FrequentlyAskedQuestion from '../app/faqs/page';
-import AboutUs from '@/components/AboutUs';
+import AboutUs from '@/app/about/AboutUs';
+import Testimonials from '../app/testimonials/page';
+import Sponsor from '../app/sponsors/page';
+import Instructor from './instructors/page';
 
 export default function Home() {
 	return (
 		<>
-			<div className="h-full sm:h-[84.5vh] items-center flex bg-offWhite overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-32 mt-10 sm:mt-0">
+			<section className="h-full sm:h-[84.5vh] items-center flex bg-offWhite overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-32 mt-10 sm:mt-0">
 				{/* Heading/Introduction */}
 				<div className="flex flex-col items-center sm:flex-row md:gap-0 lg:gap-8 xl:gap-11">
 					<div className="w-full flex flex-col items-center sm:items-start align-center justify-center sm:w-1/2">
@@ -49,9 +52,12 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-			</div>
+			</section>
 			<AboutUs />
+			<Instructor />
+			<Sponsor />
 			<FrequentlyAskedQuestion />
+			<Testimonials />
 		</>
 	);
 }

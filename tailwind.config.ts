@@ -20,6 +20,7 @@ const config: Config = {
 		cs50Yellow: "#F3AF06",
 		offYellow: "#FFF5E0",
 		warningRed: "#F5004F",
+		offPurple: "#EBE0FF",
       },
 	  backgroundImage: {
         'bg-effect': "url('/images/bg-effect.svg')",

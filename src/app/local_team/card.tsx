@@ -2,28 +2,6 @@ import { Card, CardHeader, CardBody, Image } from '@nextui-org/react';
 import { ITeam } from '@/app/local_team/team_list_type';
 import { Chip } from '@nextui-org/react';
 
-// Function to import all images from a directory
-function importAll(r: __WebpackModuleApi.RequireContext) {
-	let images: { [key: string]: string } = {};
-	r.keys().forEach((item: string) => {
-		console.log(`Importing: ${item}`); // Debugging statement
-		images[item.replace('./', '')] = r(item).default;
-	});
-	return images;
-}
-
-let images: { [key: string]: string } = {};
-
-try {
-	// Import all images from the public/images/team directory
-	images = importAll(
-		require.context('../../public/images/team', false, /\.(png|jpe?g|svg)$/)
-	);
-	console.log('Imported Images:', images); // Debugging statement
-} catch (error) {
-	console.error('Error importing images:', error);
-}
-
 export default function App({ Teams }: { Teams: ITeam[] }) {
 	return (
 		<>
@@ -31,12 +9,13 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 				<h1 className="flex text-4xl text-center font-black items-center justify-center  text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 					Meet Our Local Team
 				</h1>
-				<p className="text-sm py-2 px-6 sm:px-28 text-center text-textBlue ">
-					Following a very successful adaption of CS50x course in Nepal, We are
-					back with CS50 AI.
+				<p className="text-sm py-2 px-6 sm:px-28 lg:w-[80%] mx-auto  text-center text-textBlue ">
+					Our local CS50 AI team is committed to leading in innovation,
+					excellence, and growth, equipping students with the skills to shape a
+					transformative future in artificial intelligence.
 				</p>
 				<div className="flex justify-center mt-8 mb-4">
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-20mx-auto justify-center items-center sm:mt-0">
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-20mx-auto justify-center items-center sm:mt-0">
 						{Teams.map((team, index) => (
 							<Card
 								key={`${index + 1} - ${team.name}`}
@@ -45,9 +24,13 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 									<Image
 										alt={`${team.name} Image`}
 										className="object-cover rounded-lg"
-										// src={images[`${team.image}`]}
-										src="/images/team/1.png"
+										src={
+											team.image
+												? `/images/team/${team.image}`
+												: '/images/team/default.jpg'
+										}
 										width={270}
+										height={200}
 									/>
 								</CardBody>
 								<CardHeader className="flex-col items-start">

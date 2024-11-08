@@ -1,5 +1,5 @@
 export interface ITeam {
-	image: string;
+	image?: string;
 	badge?: string;
 	name: string;
 	role: string;
