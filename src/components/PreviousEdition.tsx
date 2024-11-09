@@ -1,5 +1,4 @@
 'use client';
-import react from 'react';
 import { FaCircleInfo } from 'react-icons/fa6';
 import Link from 'next/link';
 
