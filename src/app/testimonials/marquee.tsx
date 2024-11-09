@@ -144,7 +144,7 @@ const TestimonialsMarquee: FC<Props> = ({ isReversed = false, className }) => {
 	return (
 		// changes the entire background
 		<div
-			className="w-full py-8 px-16"
+			className="w-full py-8 px-0 sm:px-16"
 			style={{
 				background:
 					'linear-gradient(to bottom, #f6f6f6, #f6f6f6, #E0E0FF,#E0E0FF, #E0E0FF, #f6f6f6)',
