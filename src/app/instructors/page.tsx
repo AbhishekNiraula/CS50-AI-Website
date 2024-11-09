@@ -5,7 +5,7 @@ import { HoverEffect } from '@/components/ui/card-hover-effect';
 
 export default function Instructor() {
 	return (
-		<div className="text-center bg-offPurple py-10">
+		<div className="text-center bg-offPurple py-10 px-6">
 			<h1 className="flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 				Meet our Instructors
 			</h1>
