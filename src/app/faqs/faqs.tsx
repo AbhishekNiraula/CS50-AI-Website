@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { useState, useRef, useEffect } from 'react';
 import { IFAQ } from '@/app/faqs/faq_list_type';
 import { Accordion, AccordionItem } from '@nextui-org/react';
 import { FaCirclePlus, FaCircleMinus } from 'react-icons/fa6';

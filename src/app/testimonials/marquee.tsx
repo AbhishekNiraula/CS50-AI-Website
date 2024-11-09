@@ -71,7 +71,7 @@ const TestimonialsMarquee: FC<Props> = ({ isReversed = false, className }) => {
 		{ dependencies: [isReversed] }
 	);
 
-	let timelineTimeScaleTween = useRef<GSAPTween>();
+	const timelineTimeScaleTween = useRef<GSAPTween>();
 
 	const onPointerEnter = () => {
 		if (!timeline.current) return;

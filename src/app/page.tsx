@@ -1,9 +1,6 @@
 'use client';
-import react from 'react';
 import Image from 'next/image';
 import { Link, Button } from '@nextui-org/react';
-import Faqs from '../app/faqs/faqs';
-import { FAQList } from '../app/faqs/faq_list';
 import FrequentlyAskedQuestion from '../app/faqs/page';
 import AboutUs from '@/app/about/AboutUs';
 import Testimonials from '../app/testimonials/page';

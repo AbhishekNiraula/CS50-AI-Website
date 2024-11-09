@@ -1,7 +1,5 @@
 'use client';
 import React from 'react';
-import { Link, Button } from '@nextui-org/react';
-import Image from 'next/image';
 import TestimonialsMarquee from '@/app/testimonials/marquee';
 
 export default function Testimonials() {

@@ -1,10 +1,8 @@
 'use client';
 import React from 'react';
-import { useState, useRef, useEffect } from 'react';
 import { Link, Button } from '@nextui-org/react';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
-import { li } from 'framer-motion/client';
 
 export default function FooterSection() {
 	return (

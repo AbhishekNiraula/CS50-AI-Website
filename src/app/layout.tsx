@@ -4,7 +4,6 @@ import { Poppins } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import PreviousEdition from '@/components/PreviousEdition';
 import Footer from '../app/footer/page';
-import LocalTeam from '../app/local_team/page';
 
 const poppins = Poppins({
 	weight: '400',

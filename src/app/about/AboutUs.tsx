@@ -42,7 +42,7 @@ const AboutUs = () => {
 						What is CS50 AI?
 					</p>
 					<p className="md:w-[80%] text-sm text-textBlue text-center sm:text-left font-light pt-4">
-						CS50 AI is a specialized adaption of Harvard University's Cs50
+						CS50 AI is a specialized adaption of Harvard University&apos;s Cs50
 						Introduction to Artificial Intelligence with Python course, designed
 						to introduce students to the fundamentals of artificial
 						intelligence. THis couse covers core AI concepts such as machine
