@@ -48,6 +48,20 @@ const ELEMENTS = [...TESTIMONIALS, ...TESTIMONIALS];
 const TestimonialsMarquee: FC<Props> = ({ isReversed = false, className }) => {
 	const movingContainer = useRef<HTMLDivElement>(null);
 	const timeline = useRef<GSAPTimeline>();
+	const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			setWindowWidth(window.innerWidth);
+
+			const handleResize = () => {
+				setWindowWidth(window.innerWidth);
+			};
+
+			window.addEventListener('resize', handleResize);
+			return () => window.removeEventListener('resize', handleResize);
+		}
+	}, []);
 
 	useGSAP(
 		() => {
@@ -97,7 +111,7 @@ const TestimonialsMarquee: FC<Props> = ({ isReversed = false, className }) => {
 				{' '}
 				{ELEMENTS.map((testimonial, index) => {
 					const isLast = index === ELEMENTS.length - 1;
-					const cardWidth = window.innerWidth < 640 ? 300 : 400; // Adjust card width for smaller screens
+					const cardWidth = windowWidth && windowWidth < 640 ? 300 : 400; // Adjust card width for smaller screens
 					return (
 						<div
 							key={index}
