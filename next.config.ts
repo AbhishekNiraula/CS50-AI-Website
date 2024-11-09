@@ -5,16 +5,7 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: false,
   },
+  output: 'export',
 };
-module.exports = {
-	images: {
-	  remotePatterns: [
-		{
-		  protocol: 'https',
-		  hostname: 'assets.aceternity.com',
-		},
-	  ],
-	},
-  };
 
 export default nextConfig;
