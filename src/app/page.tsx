@@ -33,7 +33,7 @@ export default function Home() {
 							community of future innovators.
 						</p>
 						<Button
-							className="mt-4 w-40 text-base rounded-md text-offWhite border-primaryPurple font-semibold bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple px-6 py-3"
+							className="mt-4 w-40 text-base rounded-md text-offWhite border-primaryPurple font-semibold bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple px-12 py-6 flex justify-center items-center"
 							as={Link}
 							variant="flat">
 							Get Started 🔥
