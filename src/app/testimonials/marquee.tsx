@@ -1,8 +1,8 @@
 'use client';
-import react, { useEffect, useState, useRef, useMemo } from 'react';
+import react, { useEffect, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { type FC } from 'react';
+import { type FC, useMemo, useRef } from 'react';
 import { twJoin, twMerge } from 'tailwind-merge';
 import '../globals.css';
 
