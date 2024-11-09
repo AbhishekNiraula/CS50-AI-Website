@@ -73,12 +73,12 @@ export const TeamList: ITeam[] = [
 		role: 'CS50 Fair Incharge',
 	},
 	{
-		image: 'Niraj_Bista.jpg',
+		image: 'Niraj_bista.jpg',
 		name: 'Niraj Bista',
 		role: 'Overviewer',
 	},
 	{
-		image: 'Abhishek_niraula.jpg',
+		image: 'Abhishek_Niraula.jpg',
 		name: 'Abhishek Niraula',
 		role: 'Overviewer',
 	},
