@@ -89,7 +89,7 @@ export default function App() {
 							isActive(link)
 								? 'border-b-3 overflow-hidden border-spacing-7 rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed'
 								: ''
-						}`}
+						} ${title === 'Syllabus' ? 'syllabus' : ''}`}
 						key={`${title}-${index}`}>
 						<Link className="sm:text-sm md:text-base text-base" href={link}>
 							{title}
@@ -115,7 +115,7 @@ export default function App() {
 							isActive(link)
 								? 'border-s-3 overflow-hidden rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed '
 								: ''
-						}`}
+						} ${title === 'Syllabus' ? 'syllabus2' : ''}`}
 						key={`${title}-${index}`}>
 						<Link className="w-full" href={link} size="md">
 							{title}

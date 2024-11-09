@@ -30,8 +30,34 @@
 	animation: scroll 10s linear infinite;
 	overflow: hidden;
 }
-
-@keyframes scroll {
-	from { transform: translateX(0); }
-	to { transform: translateX(calc(-100% - var(--gap))); }
+.syllabus 
+{
+	animation: vibrate 1s linear 3; 
+}
+.syllabus2
+{
+	animation: vibrate2 1s linear 3; 
+}
+@keyframes vibrate2 
+{
+	0% { transform: translateX(0) }
+	25% { transform: translateX(5px) }
+	50% { transform: translateX(-5px) }
+	75% { transform: translateX(5px) }
+	100% { transform: translateX(0) }
+}
+@keyframes vibrate {
+	0% { 
+		transform: scale(1); 
+	}
+	25% { 
+			transform: scale(1.1) }
+	50% { 
+		transform: scale(1); }
+	75% { 
+		transform: scale(0.9); 
+	}
+	100% {  
+		transform: scale(1)
+	}
 }
